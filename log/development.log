@@ -843,3 +843,254 @@ Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6
 
 
 Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-24 01:08:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:15:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (25.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 842ms (Views: 831.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:30 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:30 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:30 +0200
+
+
+Started GET "/assets/application.self-c893b4a998a19d73d503814ec0229f6ec48686a868094c3b8f96d586e96bc063.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:31 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:15:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 654ms (Views: 645.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+
+
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:07 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:35:07 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:35:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for 127.0.0.1 at 2017-03-25 15:36:27 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:36:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:41:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 782ms (Views: 773.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-e9bd4cedd6eeaa6a2227eac58687ebb7c67412b98ee349f780c94f844742c592.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/assets/backbone/backbone.self-0977290d5e68ce40d516cd4dc3965586680024e51399f0ee54ee8ed3a99b1506.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:41:48 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:47:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 634ms (Views: 623.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/application.self-c893b4a998a19d73d503814ec0229f6ec48686a868094c3b8f96d586e96bc063.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/backbone.radio/src/backbone.radio.self-db044deb942c590347c7e4ce252694d8c20e7b2e1ff696c3e09ad32169bbc505.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:47:13 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:47:30 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 355ms (Views: 346.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:47:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 132ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:48:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-25 15:48:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 148ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.self-32ba33597761e50897b3966089ceb510741bfb722eb736a007f7b5bec0ccf263.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/application.self-c893b4a998a19d73d503814ec0229f6ec48686a868094c3b8f96d586e96bc063.js?body=1" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.js.map" for 127.0.0.1 at 2017-03-25 15:48:41 +0200
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 15:48:41 +0200

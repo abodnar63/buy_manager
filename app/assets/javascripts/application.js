@@ -13,3 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+//= require underscore/underscore
+//= require backbone/backbone
+//= require backbone.radio/build/backbone.radio
+//= require backbone.marionette/lib/backbone.marionette

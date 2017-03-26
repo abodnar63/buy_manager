@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container-fluid">
+    <% if user_signed_in? %>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <p class="navbar-text">Привет, <%= current_user.email%></p>
+        </li>
+        <li>
+          <%= link_to "Выйти", destroy_user_session_path, method: :delete %>
+        </li>
+      </ul>
+    <% else %>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "Войти", new_user_session_path %>
+        </li>
+        <li>
+          <%= link_to "Регистрация", new_user_registration_path %>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+</nav>

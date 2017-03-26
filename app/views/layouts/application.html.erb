@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Welcome</title>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag "application" %>
-</head>
-<body>
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-</nav>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-<%= javascript_include_tag "application" %>
-</body>
+  <head>
+    <title>Welcome</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+    <%= javascript_include_tag "application" %>
+    <%= render partial: "includes/header" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
 </html>

@@ -1132,3 +1132,119 @@ Started GET "/assets/backbone.radio/build/backbone.radio.js.map" for 127.0.0.1 a
 
 
 Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-25 16:20:54 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-26 16:39:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 647ms (Views: 636.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/theme.self-db9a035091ded467641925b3959bbaefa501f54d196420ed15e75537e67c9dd0.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/jquery-ui/jquery-ui.self-bac161e5cdca8c4d90a254b8a05bbf6fe02083b019e0ff9bf3d5602a918d6fbf.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.self-32ba33597761e50897b3966089ceb510741bfb722eb736a007f7b5bec0ccf263.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/application.self-c893b4a998a19d73d503814ec0229f6ec48686a868094c3b8f96d586e96bc063.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/application.self-27a424817124a538a1bd8a9038aea5396ae2ca72ec5dbb40fa23fc96e0859767.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/widgets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:11 +0300
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.js.map" for 127.0.0.1 at 2017-03-26 16:39:13 +0300
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-26 16:39:13 +0300
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap.min.css.map" for 127.0.0.1 at 2017-03-26 16:39:13 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 289ms (Views: 281.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/widgets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/theme.self-db9a035091ded467641925b3959bbaefa501f54d196420ed15e75537e67c9dd0.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/application.self-27a424817124a538a1bd8a9038aea5396ae2ca72ec5dbb40fa23fc96e0859767.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/jquery/jquery.self-f122fcda7b3d039af154bb8a06781aeabb46fd547d77aca154d9efd46a5f0e1f.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/jquery-ui/jquery-ui.self-bac161e5cdca8c4d90a254b8a05bbf6fe02083b019e0ff9bf3d5602a918d6fbf.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.self-32ba33597761e50897b3966089ceb510741bfb722eb736a007f7b5bec0ccf263.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.self-59f10c1e3f7542aedde44d1ae2c55dd30c8aecf1483f28bcbe3e28cbd695a86e.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/application.self-c893b4a998a19d73d503814ec0229f6ec48686a868094c3b8f96d586e96bc063.js?body=1" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/backbone.radio/build/backbone.radio.js.map" for 127.0.0.1 at 2017-03-26 16:39:39 +0300
+
+
+Started GET "/assets/backbone.marionette/lib/backbone.marionette.js.map" for 127.0.0.1 at 2017-03-26 16:39:39 +0300

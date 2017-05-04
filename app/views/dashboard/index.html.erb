@@ -1,0 +1,8 @@
+<% content_for :js_layout do %>
+  <%= javascript_include_tag "pages/dashboard" %>
+<% end %>
+<div class="container">
+  <div id="js-dashboard"></div>
+</div>
+
+<%= render "dashboard/templates" %>

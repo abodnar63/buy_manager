@@ -31,9 +31,17 @@ gem "bower-rails", "~> 0.11.0"
 
 gem 'puma'
 
+group :development, :test do
+  gem 'pry-byebug', '~> 1.3.3'
+  gem 'rspec-rails', '~> 3.4.2'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

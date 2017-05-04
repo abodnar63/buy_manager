@@ -7,4 +7,14 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     dashboard_path
   end
+
+  private
+  
+  def render_success(data)
+    render status: 200, json: data
+  end
+
+  def render_error(data, code: 422)
+    render status: code, json: data
+  end
 end

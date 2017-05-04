@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  get 'dashboard/(*path)' => 'dashboard#index'
+  get 'dashboard/(*path)' => 'dashboard#index', as: :dashboard
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

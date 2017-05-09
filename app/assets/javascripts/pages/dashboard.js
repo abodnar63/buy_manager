@@ -3,4 +3,6 @@
 
 //= require pages/dashboard/app
 //= require pages/dashboard/router
+//= require_tree ./dashboard/models/
+//= require_tree ./dashboard/collections/
 //= require_tree ./dashboard/views/

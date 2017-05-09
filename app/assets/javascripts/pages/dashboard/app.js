@@ -11,15 +11,16 @@ $(function() {
     region: "#js-dashboard",
 
     onStart: function() {
-      this.showView(new Dashboard.views.DashboardView());
-
+      Dashboard.views.dashboard = new Dashboard.views.DashboardView();
+      this.showView(Dashboard.views.dashboard);
+      
       Dashboard.router = new Dashboard.Router();
-
       Backbone.history.start({
         root: "/dashboard/"
       });
     }
   });
 
-  Dashboard.app = new Dashboard.App().start();
+  Dashboard.app = new Dashboard.App();
+  Dashboard.app.start();
 });

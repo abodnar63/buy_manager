@@ -12,7 +12,7 @@
 //
 //= require jquery/jquery
 //= require jquery_ujs
-
+//= require bootstrap/dist/js/bootstrap
 //= require underscore/underscore
 //= require backbone/backbone
 //= require backbone.radio/build/backbone.radio

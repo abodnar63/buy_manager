@@ -1,20 +1,20 @@
 require "rails_helper"
 
-RSpec.describe ListsController, :type => :controller do
+RSpec.describe ProductsController, :type => :controller do
   describe "GET #index" do
     it "responds with 302 for not signed in users" do
       get :index
       expect(response).to have_http_status(302)
     end
 
-    it "responds with 200 and returns user lists for signed in users" do
+    it "responds with 200 and returns user products for signed in users" do
       user = FactoryGirl.create(:user)
-      FactoryGirl.create_list(:list, 2, user: user)
+      FactoryGirl.create_list(:product, 2, user: user)
       sign_in user
       get :index
       resp = JSON.parse(response.body)
       expect(response).to have_http_status(200)
-      expect(resp.size).to eq(user.lists.size)
+      expect(resp.size).to eq(user.products.size)
     end
   end
 
@@ -32,23 +32,23 @@ RSpec.describe ListsController, :type => :controller do
         sign_in @user
       end
 
-      it "returns 422 if list doesn't not exist" do
+      it "returns 422 if product doesn't not exist" do
         get :show, id: 1
         expect(response).to have_http_status(422)
       end
 
-      it "returns 422 if list doesn't not belong to user" do
-        list = FactoryGirl.create(:list)
-        get :show, id: list.id
+      it "returns 422 if product doesn't not belong to user" do
+        product = FactoryGirl.create(:product)
+        get :show, id: product.id
         expect(response).to have_http_status(422)
       end
 
-      it "returns 200 if list exists" do
-        list = FactoryGirl.create(:list, user: @user)
-        get :show, id: list.id
+      it "returns 200 if product exists" do
+        product = FactoryGirl.create(:product, user: @user)
+        get :show, id: product.id
         resp = JSON.parse(response.body)
         expect(response).to have_http_status(200)
-        expect(resp["id"]).to eq(list.id)
+        expect(resp["id"]).to eq(product.id)
       end
     end
   end
@@ -72,7 +72,7 @@ RSpec.describe ListsController, :type => :controller do
         expect(response).to have_http_status(422)
       end
 
-      it "creates new list and returns 200" do
+      it "creates new product and returns 200" do
         post :create, name: "Test"
         resp = JSON.parse(response.body)
         expect(response).to have_http_status(200)
@@ -95,24 +95,24 @@ RSpec.describe ListsController, :type => :controller do
         sign_in @user
       end
 
-      it "returns 422 if list doesn't not belong to user" do
-        list = FactoryGirl.create(:list)
-        put :update, name: "Test", id: list.id
+      it "returns 422 if product doesn't not belong to user" do
+        product = FactoryGirl.create(:product)
+        put :update, name: "Test", id: product.id
         expect(response).to have_http_status(422)
       end
 
-      it "returns 422 if list doesn't exist" do
+      it "returns 422 if product doesn't exist" do
         put :update, name: "Test", id: 1
         expect(response).to have_http_status(422)
       end
 
-      it "returns 200 and updates list" do
-        list = FactoryGirl.create(:list, user: @user)
-        put :update, name: "Test List", id: list.id
+      it "returns 200 and updates product" do
+        product = FactoryGirl.create(:product, user: @user)
+        put :update, name: "Test product", id: product.id
         resp = JSON.parse(response.body)
         expect(response).to have_http_status(200)
-        expect(resp["name"]).to eq("Test List")
-        expect(resp["id"]).to eq(list.id)
+        expect(resp["name"]).to eq("Test product")
+        expect(resp["id"]).to eq(product.id)
       end
     end
   end
@@ -131,22 +131,22 @@ RSpec.describe ListsController, :type => :controller do
         sign_in @user
       end
 
-      it "returns 422 if list doesn't exist" do
+      it "returns 422 if product doesn't exist" do
         delete :destroy, id: 1
         expect(response).to have_http_status(422)
       end
 
-      it "returns 422 if list doesn't not belong to user" do
-        list = FactoryGirl.create(:list)
-        delete :destroy, id: list.id
+      it "returns 422 if product doesn't not belong to user" do
+        product = FactoryGirl.create(:product)
+        delete :destroy, id: product.id
         expect(response).to have_http_status(422)
       end
 
-      it "returns 200 and destroyes list" do
-        list = FactoryGirl.create(:list, user: @user)
+      it "returns 200 and destroyes product" do
+        product = FactoryGirl.create(:product, user: @user)
         expect do
-          delete :destroy, id: list.id
-        end.to change { @user.lists.count }.by(-1)
+          delete :destroy, id: product.id
+        end.to change { @user.products.count }.by(-1)
         expect(response).to have_http_status(200)
       end
     end

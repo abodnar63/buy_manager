@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504165844) do
+ActiveRecord::Schema.define(version: 20170512215334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lists", force: :cascade do |t|
-    t.string  "name",    default: ""
+    t.text    "name",    default: ""
     t.integer "user_id"
   end
 

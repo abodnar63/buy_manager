@@ -1,3 +1,19 @@
 // Place all the styles related to the Dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container--small {
+  padding: 20px;
+
+  @media screen and (max-width: 767px) {
+    padding: 5px;
+  }
+}
+
+.gap--small {
+  padding-top: 20px;
+}
+
+button:focus {
+  outline: none;
+}

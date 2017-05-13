@@ -1,5 +1,6 @@
 Dashboard.views.CreateList = Marionette.View.extend({
   template: "#js-list-create",
+  className: "gap--small",
 
   ui: {
     createModal: "#js-create-list-modal",

@@ -105,10 +105,10 @@ RSpec.describe ListsController, :type => :controller do
 
       it "returns 200 and updates list" do
         list = FactoryGirl.create(:list, user: @user)
-        put :update, name: "Test", id: list.id
+        put :update, name: "Test List", id: list.id
         resp = JSON.parse(response.body)
         expect(response).to have_http_status(200)
-        expect(resp["name"]).to eq("Test")
+        expect(resp["name"]).to eq("Test List")
         expect(resp["id"]).to eq(list.id)
       end
     end

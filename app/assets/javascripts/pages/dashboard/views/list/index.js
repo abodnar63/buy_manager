@@ -1,6 +1,6 @@
 Dashboard.views.ListIndex = Marionette.View.extend({
   template: "#js-list-index",
-  className: "container",
+  className: "container--small",
 
   ui: {
     showModal: ".js-show-create-modal",
@@ -30,9 +30,26 @@ Dashboard.views.ListIndex = Marionette.View.extend({
 
 Dashboard.views.ListCollectionItem = Marionette.View.extend({
   template: "#js-list-item",
-  tagName: "li"
+  tagName: "button",
+  className: "list-group-item",
+
+  ui: {
+    removeBtn: ".js-remove-list"
+  },
+
+  events: {
+    "click @ui.removeBtn" : "removeItem"
+  },
+
+  removeItem: function() {
+    var r = confirm("Список будет удален");
+    if (r == true) {
+        this.model.destroy();
+    }
+  }
 });
 
 Dashboard.views.ListCollection = Marionette.CollectionView.extend({
-  childView: Dashboard.views.ListCollectionItem
+  childView: Dashboard.views.ListCollectionItem,
+  className: "list-group"
 });

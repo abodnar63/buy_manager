@@ -17,3 +17,4 @@
 //= require backbone/backbone
 //= require backbone.radio/build/backbone.radio
 //= require backbone.marionette/lib/backbone.marionette
+//= require components/alerts

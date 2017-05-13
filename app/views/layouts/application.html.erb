@@ -10,7 +10,10 @@
   <body>
     <%= javascript_include_tag "application" %>
     <%= render partial: "includes/header" %>
+    <div id="js-alerts" class="alerts-container"></div>
     <%= yield %>
     <%= yield :js_layout %>
   </body>
+
+  <%= render "components/alerts" %>
 </html>

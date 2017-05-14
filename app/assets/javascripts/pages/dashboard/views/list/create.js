@@ -23,10 +23,11 @@ Dashboard.views.CreateList = Marionette.View.extend({
         name: this.ui.listName.val()
       },
       {
+        wait: true,
         success: function() {
           self.ui.listName.val();
           self.toggle();
-          alert("saved");
+          $(document).trigger("document-alert", {message: "Вы создали список", type: "alert-success"})
         }
       }
     );

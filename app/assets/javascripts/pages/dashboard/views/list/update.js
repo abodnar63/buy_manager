@@ -12,7 +12,15 @@ Dashboard.views.ListUpdate = Marionette.View.extend({
   updateName: function() {
     var name = this.ui.name.val();
     if (this.model.get("name") !== name) {
-      this.model.save({name: name});
+      this.model.save(
+        {name: name},
+        {
+          wait: true,
+          success: function() {
+            $(document).trigger("document-alert", {message: "Вы изменили список", type: "alert-success"})
+          }
+        }
+      );
     }
   }
 });

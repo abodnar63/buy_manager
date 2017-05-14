@@ -44,7 +44,12 @@ Dashboard.views.ListCollectionItem = Marionette.View.extend({
   removeItem: function() {
     var r = confirm("Список будет удален");
     if (r == true) {
-        this.model.destroy();
+      this.model.destroy({
+        wait: true,
+        success: function() {
+          $(document).trigger("document-alert", {message: "Вы удалили список", type: "alert-success"})
+        }
+      });
     }
   }
 });

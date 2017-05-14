@@ -2,7 +2,8 @@
 var Dashboard = {
   views: {},
   models: {},
-  collections: {}
+  collections: {},
+  behaviors: {}
 }
 
 $(function() {
@@ -13,7 +14,7 @@ $(function() {
     onStart: function() {
       Dashboard.views.dashboard = new Dashboard.views.DashboardView();
       this.showView(Dashboard.views.dashboard);
-      
+
       Dashboard.router = new Dashboard.Router();
       Backbone.history.start({
         root: "/dashboard/"

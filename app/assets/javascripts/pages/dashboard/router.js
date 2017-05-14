@@ -1,13 +1,14 @@
 Dashboard.RouterController = Marionette.Object.extend({
   lists: function() {
-    this.showContent(new Dashboard.views.ListIndex());
+    var collection = new Dashboard.collections.Lists();
+    collection.fetch();
+    this.showContent(new Dashboard.views.ListIndex({collection: collection}));
   },
 
   list: function(id) {
     var model = new Dashboard.models.List({id: id, name: "Loading..."});
     model.fetch();
     this.showContent(new Dashboard.views.ListShow({model: model}));
-    console.log("render list view #" + id);
   },
 
   stats: function() {
@@ -16,8 +17,15 @@ Dashboard.RouterController = Marionette.Object.extend({
   },
 
   products: function() {
-    this.contentRegion().empty();
-    console.log("render products");
+    var collection = new Dashboard.collections.Products();
+    collection.fetch();
+    this.showContent(new Dashboard.views.ProductIndex({collection: collection}));
+  },
+
+  product: function(id) {
+    var model = new Dashboard.models.Product({id: id, name: "Loading..."});
+    model.fetch();
+    this.showContent(new Dashboard.views.ProductShow({model: model}));
   },
 
   showContent: function(view) {
@@ -37,7 +45,8 @@ Dashboard.Router = Marionette.AppRouter.extend({
     "lists":     "lists",
     "list/:id":  "list",
     "stats":     "stats",
-    "products":  "products"
+    "products":  "products",
+    "product/:id":  "product",
   },
 
   initialize: function() {

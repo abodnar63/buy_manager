@@ -1,5 +1,5 @@
-Dashboard.views.CreateList = Marionette.View.extend({
-  template: "#js-list-create",
+Dashboard.views.CreateProduct = Marionette.View.extend({
+  template: "#js-product-create",
   className: "gap--small",
 
   ui: {
@@ -14,6 +14,6 @@ Dashboard.views.CreateList = Marionette.View.extend({
 
   success: function() {
     this.toggle();
-    $(document).trigger("document-alert", {message: "Вы создали список", type: "alert-success"})
+    $(document).trigger("document-alert", {message: "Вы создали продукт", type: "alert-success"})
   }
 });

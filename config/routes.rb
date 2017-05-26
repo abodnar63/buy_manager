@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  resources :products
+
+  resources :products do
+    resources :labels, only: [:index, :create, :update, :destroy]
+  end
+
   resources :lists
+
   get 'home/index'
 
   devise_for :users

@@ -1,6 +1,8 @@
 // global object for namespacing
 var Dashboard = {
-  views: {},
+  views: {
+    product: {}
+  },
   models: {},
   collections: {},
   behaviors: {}

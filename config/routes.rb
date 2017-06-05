@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :products do
+  resources :products
+
+  resources :product, module: "product" do
     resources :labels, only: [:index, :create, :update, :destroy]
   end
 

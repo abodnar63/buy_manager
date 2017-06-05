@@ -1,4 +1,4 @@
-class LabelsController < ApplicationController
+class Product::LabelsController < ApplicationController
 
   def create
     label = product.labels.build(label_params)
@@ -36,7 +36,9 @@ class LabelsController < ApplicationController
   private
 
   def label_params
-    params.permit(:name)
+    obj = params.permit(:name)
+    obj[:user_id] = current_user.id
+    obj
   end
 
   def product

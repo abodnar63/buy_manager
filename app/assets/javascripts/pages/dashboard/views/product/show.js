@@ -18,6 +18,6 @@ Dashboard.views.ProductShow = Marionette.View.extend({
       this.labels.fetch();
     }
 
-    this.showChildView('labels', new Dashboard.views.LabelsIndex({collection: this.labels}));
+    this.showChildView('labels', new Dashboard.views.product.LabelsIndex({collection: this.labels}));
   }
 });

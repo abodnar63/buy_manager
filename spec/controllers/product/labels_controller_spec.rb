@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe LabelsController, :type => :controller do
+RSpec.describe Product::LabelsController, :type => :controller do
   describe "GET #index" do
     let(:user) { FactoryGirl.create(:user) }
     let(:product) { FactoryGirl.create(:product, user: user) }
@@ -12,7 +12,7 @@ RSpec.describe LabelsController, :type => :controller do
 
     it "responds with 200 and returns product labels for signed in users" do
       sign_in user
-      FactoryGirl.create_list(:label, 2, product: product)
+      FactoryGirl.create_list(:label, 2, product: product, user: user)
       get :index, product_id: product.id
       resp = JSON.parse(response.body)
       expect(response).to have_http_status(200)
@@ -72,7 +72,7 @@ RSpec.describe LabelsController, :type => :controller do
       end
 
       it "returns 200 and updates label" do
-        label = FactoryGirl.create(:label, product: product)
+        label = FactoryGirl.create(:label, product: product, user: user)
         put :update, name: "Test Label", id: label.id, product_id: product.id
         resp = JSON.parse(response.body)
         expect(response).to have_http_status(200)

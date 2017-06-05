@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :labels, only: [:index, :create, :update, :destroy]
   end
 
+  resources :labels
   resources :lists
 
   get 'home/index'

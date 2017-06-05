@@ -1,5 +1,6 @@
-Dashboard.views.product.LabelsIndex = Marionette.View.extend({
-  template: "#js-product-label-index",
+Dashboard.views.LabelsIndex = Marionette.View.extend({
+  template: "#js-label-index",
+  className: "container--small",
 
   ui: {
     showModal: ".js-show-create-modal",
@@ -15,9 +16,9 @@ Dashboard.views.product.LabelsIndex = Marionette.View.extend({
   },
 
   onRender: function() {
-    this.createModal = new Dashboard.views.product.CreateLabel({collection: this.collection});
+    this.createModal = new Dashboard.views.CreateLabel({collection: this.collection});
     this.showChildView('create', this.createModal);
-    this.showChildView('items', new Dashboard.views.product.LabelsCollection({collection: this.collection}));
+    this.showChildView('items', new Dashboard.views.LabelsCollection({collection: this.collection}));
   },
 
   showCreateModal: function() {
@@ -25,8 +26,8 @@ Dashboard.views.product.LabelsIndex = Marionette.View.extend({
   }
 });
 
-Dashboard.views.product.LabelsCollectionItem = Marionette.View.extend({
-  template: "#js-product-label-item",
+Dashboard.views.LabelsCollectionItem = Marionette.View.extend({
+  template: "#js-label-item",
   tagName: "button",
   className: "list-group-item",
 
@@ -37,7 +38,7 @@ Dashboard.views.product.LabelsCollectionItem = Marionette.View.extend({
   },
 });
 
-Dashboard.views.product.LabelsCollection = Marionette.CollectionView.extend({
-  childView: Dashboard.views.product.LabelsCollectionItem,
+Dashboard.views.LabelsCollection = Marionette.CollectionView.extend({
+  childView: Dashboard.views.LabelsCollectionItem,
   className: "list-group"
 });

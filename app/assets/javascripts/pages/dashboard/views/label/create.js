@@ -1,5 +1,5 @@
-Dashboard.views.product.CreateLabel = Marionette.View.extend({
-  template: "#js-product-label-create",
+Dashboard.views.CreateLabel = Marionette.View.extend({
+  template: "#js-label-create",
   className: "gap--small",
 
   ui: {

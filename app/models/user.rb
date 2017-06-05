@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :lists
   has_many :products
+  has_many :labels
 end

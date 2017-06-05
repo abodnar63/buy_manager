@@ -28,12 +28,42 @@ Dashboard.RouterController = Marionette.Object.extend({
     this.showContent(new Dashboard.views.ProductShow({model: model}));
   },
 
+  labels: function() {
+    this.showContent(new Dashboard.views.LabelsIndex({collection: Dashboard.collections.labels}));
+  },
+
+  label: function(id) {
+    var self = this;
+
+    if (Dashboard.collections.labels.isFetched) {
+      this.renderLabel(id);
+    } else {
+      Dashboard.collections.labels.once("fetched", function() {
+        self.renderLabel(id);
+      })
+    }
+  },
+
+  renderLabel: function(id) {
+    var model = Dashboard.collections.labels.get(id);
+    if (!model) {
+      this.renderError();
+      return
+    }
+    this.showContent(new Dashboard.views.LabelShow({model: model}));
+  },
+
   showContent: function(view) {
     this.contentRegion().show(view)
   },
 
   contentRegion: function() {
     return region = Dashboard.views.dashboard.getRegion("content");
+  },
+
+  renderError() {
+    this.contentRegion().empty();
+    console.log("Error: item doesn't exist");
   }
 
 });
@@ -47,10 +77,20 @@ Dashboard.Router = Marionette.AppRouter.extend({
     "stats":     "stats",
     "products":  "products",
     "product/:id":  "product",
+    "labels":     "labels",
+    "label/:id": "label"
   },
 
   initialize: function() {
     this.channel = Backbone.Radio.channel('router');
+
+    Dashboard.collections.labels = new Dashboard.collections.Labels();
+    Dashboard.collections.labels.fetch({
+      success: function(collection){
+        Dashboard.collections.labels.isFetched = true;
+        Dashboard.collections.labels.trigger('fetched');
+      }
+    });
   },
 
   onRoute: function(name, path, args) {

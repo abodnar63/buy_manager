@@ -29,27 +29,17 @@ Dashboard.RouterController = Marionette.Object.extend({
   },
 
   labels: function() {
+    Dashboard.collections.labels = new Dashboard.collections.Labels();
+    Dashboard.collections.labels.fetch();
     this.showContent(new Dashboard.views.LabelsIndex({collection: Dashboard.collections.labels}));
   },
 
   label: function(id) {
     var self = this;
 
-    if (Dashboard.collections.labels.isFetched) {
-      this.renderLabel(id);
-    } else {
-      Dashboard.collections.labels.once("fetched", function() {
-        self.renderLabel(id);
-      })
-    }
-  },
+    var model = new Dashboard.models.LabelShow({id: id, name: "Loading..."});
+    model.fetch();
 
-  renderLabel: function(id) {
-    var model = Dashboard.collections.labels.get(id);
-    if (!model) {
-      this.renderError();
-      return
-    }
     this.showContent(new Dashboard.views.LabelShow({model: model}));
   },
 
@@ -83,14 +73,6 @@ Dashboard.Router = Marionette.AppRouter.extend({
 
   initialize: function() {
     this.channel = Backbone.Radio.channel('router');
-
-    Dashboard.collections.labels = new Dashboard.collections.Labels();
-    Dashboard.collections.labels.fetch({
-      success: function(collection){
-        Dashboard.collections.labels.isFetched = true;
-        Dashboard.collections.labels.trigger('fetched');
-      }
-    });
   },
 
   onRoute: function(name, path, args) {

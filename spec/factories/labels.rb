@@ -1,7 +1,6 @@
 FactoryGirl.define do
   factory :label do
-    name "Test label"
+    sequence(:name) { |n| "Test label #{n}" }
     user
-    product
   end
 end

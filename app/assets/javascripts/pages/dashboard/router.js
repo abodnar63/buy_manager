@@ -37,7 +37,7 @@ Dashboard.RouterController = Marionette.Object.extend({
   label: function(id) {
     var self = this;
 
-    var model = new Dashboard.models.LabelShow({id: id, name: "Loading..."});
+    var model = new Dashboard.models.Label({id: id, name: "Loading..."});
     model.fetch();
 
     this.showContent(new Dashboard.views.LabelShow({model: model}));

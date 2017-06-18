@@ -2,22 +2,32 @@ Dashboard.views.product.LabelsIndex = Marionette.View.extend({
   template: "#js-product-label-index",
 
   ui: {
-    showModal: ".js-show-create-modal",
+    createModal: ".js-show-create-modal",
+    addModal: ".js-show-add-modal",
   },
 
   regions: {
     create: "#js-create-region",
+    add: "#js-add-region",
     items: "#js-items-region"
   },
 
   events: {
-    "click @ui.showModal" : "showCreateModal",
+    "click @ui.createModal" : "showCreateModal",
+    "click @ui.addModal" : "showAddModal"
   },
 
   onRender: function() {
     this.createModal = new Dashboard.views.product.CreateLabel({collection: this.collection});
+    this.addModal = new Dashboard.views.product.AddLabels({model: this.model, collection: this.collection});
+
     this.showChildView('create', this.createModal);
+    this.showChildView('add', this.addModal);
     this.showChildView('items', new Dashboard.views.product.LabelsCollection({collection: this.collection}));
+  },
+
+  showAddModal: function() {
+    this.addModal.toggle();
   },
 
   showCreateModal: function() {

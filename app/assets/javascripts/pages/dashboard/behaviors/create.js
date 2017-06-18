@@ -29,6 +29,10 @@ Dashboard.behaviors.Create = Marionette.Behavior.extend({
         wait: true,
         success: function() {
           self.view.success();
+        },
+        error: function() {
+          self.view.toggle();
+          $(document).trigger("document-alert", {message: "Ошибка", type: "alert-danger"})
         }
       }
     );

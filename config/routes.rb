@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :product, module: "product" do
     resources :labels, only: [:index, :create, :update, :destroy]
+    get "other_labels" => "labels#other_labels"
+    post "add_labels" => "labels#add_labels"
   end
 
   resources :labels

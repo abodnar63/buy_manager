@@ -35,11 +35,13 @@ gem 'puma'
 
 group :development, :test do
   gem 'pry-byebug', '~> 1.3.3'
+  gem 'pry-remote'
   gem 'rspec-rails', '~> 3.4.2'
 end
 
 group :test do
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 # Use Capistrano for deployment

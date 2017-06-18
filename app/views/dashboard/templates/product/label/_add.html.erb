@@ -1,0 +1,27 @@
+<script id="js-product-add-labels" type="text/template">
+  <div class="modal fade" id="js-add-label-modal" tabindex="-1" role="dialog" aria-labelledby="createModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="createModalLabel">Лейблы</h4>
+        </div>
+        <div class="modal-body">
+          <div id="js-add-items-region"></id>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+          <button type="button" id="js-save" class="btn btn-primary">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="js-product-add-labels-item" type="text/template">
+  <div class="checkbox">
+    <label>
+      <input class="js-checkbox" type="checkbox"> <%%-name%>
+    </label>
+  </div>
+</script>
